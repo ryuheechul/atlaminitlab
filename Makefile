@@ -1,7 +1,7 @@
 # https://docs.gitlab.com/charts/development/minikube/#starting--stopping-minikube
 cluster-up:
 	minikube start -p atlaminitlab --cpus=4 --memory=6144
-	minikube addons enable metrics-server
+	minikube addons enable ingress
 
 delete-context:
 	kubectx -d atlaminitlab
