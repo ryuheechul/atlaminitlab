@@ -1,8 +1,14 @@
 init:
 	terraform init
 
-plan:
+fmt:
+	terraform fmt
+
+plan: init fmt
 	terraform plan
 
-apply:
+apply: fmt
 	terraform apply
+
+destroy:
+	terraform destroy
